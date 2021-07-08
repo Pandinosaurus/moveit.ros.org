@@ -25,6 +25,7 @@ Feel free to contact [PickNik Robotics](https://picknik.ai/connect/) for further
 ## Table of Contents <!-- omit in toc -->
 - [TrajOpt Integration and Related Work on Trajectory Optimization Methods](#trajopt-integration-and-related-work-on-trajectory-optimization-methods)
 - [Simultaneous Trajectory Execution](#simultaneous-trajectory-execution)
+- [Grasp Pose Generation](#grasp-pose-generation)
 - [Tutorial for multiple robot arms](#tutorial-for-multiple-robot-arms)
 - [Scene graph support](#scene-graph-support)
 - [Creation of a Benchmark Suite for Evaluating MoveIt Performance](#creation-of-a-benchmark-suite-for-evaluating-moveit-performance)
@@ -58,6 +59,16 @@ Feel free to contact [PickNik Robotics](https://picknik.ai/connect/) for further
   - What are the next positions of the other currently active robot arms?
 
 - **Related Github issues**: [2287](https://github.com/ros-planning/moveit/issues/2287)
+
+## Grasp Pose Generation
+
+- **Prerequisites**: ROS
+- **Programming skills**: C++, Python
+- **Difficulty**: Medium
+- **Potential mentors**: Mark Moll
+- **Description**: Improve grasp pose synthesis within MoveIt and the MoveIt Task constructor. Current grasp synthesis algorithms pair deep neural networks and sampling point clouds, see [GPD](https://github.com/atenpas/gpd) and [Dex-Net](https://berkeleyautomation.github.io/dex-net/). An initial effort using the previous grasping methods includes a [demo](https://github.com/PickNikRobotics/deep_grasp_demo) and a [tutorial](https://ros-planning.github.io/moveit_tutorials/doc/moveit_deep_grasps/moveit_deep_grasps_tutorial.html). Further work is required to harden this implementation, see [PR 196](https://github.com/ros-planning/moveit_task_constructor/pull/196).
+
+- **Related Github issues**: [188](https://github.com/ros-planning/moveit_task_constructor/issues/188)
 
 ## Tutorial for multiple robot arms
 
@@ -107,7 +118,7 @@ For this, we need to identify and implement standard tasks at varying levels of 
 - **Programming skills**: C++
 - **Difficulty**: Medium
 - **Potential mentors**: Andy Zelenak, Robert Haschke
-- **Description**: Utilize low-level controller switching (position/velocity/force-torque) during execution of MoveIt plans. Improve the [ROSControlInterface plugin](https://github.com/ros-planning/moveit/tree/master/moveit_plugins/moveit_ros_control_interface). Documentation on how to combine the components.
+- **Description**: Utilize low-level controller switching (position/velocity/force-torque) during execution of MoveIt plans. Remove the deprecated [ROSControlInterface plugin](https://github.com/ros-planning/moveit/tree/master/moveit_plugins/moveit_ros_control_interface). Improve the ability to trigger other events during trajectory execution.
 
 ## Port Inverse Kinematic Solver Libraries to MoveIt 2
 
@@ -116,6 +127,14 @@ For this, we need to identify and implement standard tasks at varying levels of 
 - **Difficulty**: Medium
 - **Potential mentors**: Andy Zelenak, Henning Kayser
 - **Description**: There are several Inverse Kinematics libraries that need to be ported to MoveIt 2. Prime candidates are [BioIK](https://github.com/TAMS-Group/bio_ik) and [TRAC-IK](https://bitbucket.org/traclabs/trac_ik/src/master/).
+
+## MoveIt Wrapper for Reinforcement Learning
+
+- **Prerequisites**: ROS, MoveIt, reinforcement learning
+- **Programming skills**: C++
+- **Difficulty**: Medium
+- **Potential mentors**: Andy Zelenak, Mark Moll
+- **Description**: Conduct a brief survey of reinforcement learning methods that could be implemented over the summer. Choose one and implement it. One possibility is described in "Operator training for preferred manipulator trajectories" by Sharp, Horn, & Pryor.
 
 <!--
 ## Improve MoveIt Grasps Library

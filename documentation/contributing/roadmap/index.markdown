@@ -18,44 +18,11 @@ title: MoveIt Roadmap
   </div>
 </div>
 <div class="row current-version roadmap-current-version">
-  <div class='col-sm-12 time-line-wrappper time-line-wrapper-future'>
-    <h3>MoveIt 2.2 Galactic Geochelone</h3>
     <a class="button button-transparent button-transparent__blue" href="/documentation/contributing/releases/">See Every 6 Week Release Schedule</a>
-    <div class="time-line">
-        <div class="time-line--orange" id="time-line--orange-2"></div>
-        <div class="time-line--blue" id="time-line--blue-2"></div>
-        <div class="time-line--red" id="time-line--red-2"></div>
-    </div>
-    <div class="time-line-content">
-        <div class="time-line--info">
-            <p>September 2020</p>
-        </div>
-        <div class="time-line--info">
-            <span class="time-line-box time-line-box--blue"></span>
-            <p>
-                <strong class="color-blue">Initial Development</strong>
-                <small>14 September 2020</small>
-            </p>
-        </div>
-        <div class="time-line--info">
-            <span class="time-line-box time-line-box--orange"></span>
-            <p>
-                <strong class="color-orange">Feature Freeze</strong>
-                <small>30 May 2021</small>
-            </p>
-        </div>
-        <div class="time-line--info">
-            <span class="time-line-box time-line-box--red"></span>
-            <p>
-                <strong class="color-red">Official Release</strong>
-                <small>30 June 2021</small>
-            </p>
-        </div>
-        <div class="time-line--info">
-            <p>June 2021</p>
-        </div>
-    </div>
-  </div>
+
+    <!-- Release progress bar -->
+    {% include release-progress.html %}
+
 </div>
 <div class='row roadmap-features'>
   <div class='col-sm-12 col-lg-12'>
@@ -65,9 +32,9 @@ title: MoveIt Roadmap
       </span>
        Upcoming Features
     </h2>
-    <span class="sub-title">There are no guarantees that any feature on our roadmap will be developed.</span>
+    <span class="sub-title">There are no guarantees that any feature in this list will be developed.</span>
     <p class="paragraph-big">
-      The following list outlines what our <a href="/about/">MoveIt Maintainers and Core Contributors</a> are working on currently. If you are working on a new feature for the MoveIt roadmap, please create a pull request to this page to have the feature added. We'd love to increase visibility of that work, prevent overlapping effortings, and encourage collaborations between developers.
+      The following list outlines what our <a href="/about/">MoveIt Maintainers and Core Contributors</a> are working on currently. If you are actively working on a new major feature for MoveIt, please create a pull request to this page to add it. We'd love to increase visibility of that work, prevent overlapping effortings, and encourage collaborations between developers.
     </p>
   </div>
   <div class="release-versions">
@@ -82,11 +49,49 @@ title: MoveIt Roadmap
           <h3>Hybrid Planning</h3>
           <p>
             <span><img src="/assets/images/icons/git-black.svg"></span>
-            <a href="https://github.com/ros-planning/moveit2/issues/300" target="_blank">View issue</a>
+            <a href="https://github.com/ros-planning/moveit2/issues/433" target="_blank">View issue</a>
           </p>
         </div>
         <div class="release-versions__2">
-          February 2021
+          June 2021
+        </div>
+        <div class="release-versions__3">
+          <div class="release-versions__divide">
+            <strong>Sebastian Jahr</strong><br/>
+            PickNik
+          </div>
+          <div class="release-versions__divide">
+            <strong>Henning Kayser</strong><br/>
+            PickNik
+          </div>
+        </div>
+      </div>
+      <div class="release-versions__content">
+        <div class="release-versions__1">
+          <h3>Migrate Pilz Industrial Motion Planner to ROS 2</h3>
+          <p>
+            <span><img src="/assets/images/icons/git-black.svg"></span>
+            <a href="https://github.com/ros-planning/moveit2/issues/315" target="_blank">View issue</a>
+          </p>
+        </div>
+        <div class="release-versions__2">
+          July 2021
+        </div>
+        <div class="release-versions__3">
+          <strong>Henning Kayser</strong><br/>
+          PickNik
+        </div>
+      </div>
+      <div class="release-versions__content">
+        <div class="release-versions__1">
+          <h3>MoveIt Config Redesign - Migrate MSA to ROS&nbsp;2</h3>
+          <p>
+            <span><img src="/assets/images/icons/git-black.svg"></span>
+            <a href="https://github.com/ros-planning/moveit2/issues/313" target="_blank">View issue</a>
+          </p>
+        </div>
+        <div class="release-versions__2">
+          October 2021
         </div>
         <div class="release-versions__3">
           <div class="release-versions__divide">
@@ -94,74 +99,10 @@ title: MoveIt Roadmap
             PickNik
           </div>
           <div class="release-versions__divide">
-            <strong>Sebastian Jahr</strong><br/>
+            <strong>Tyler Weaver</strong><br/>
             PickNik
           </div>
-        </div>
-      </div>
-      <div class="release-versions__content">
-        <div class="release-versions__1">
-          <h3>Integration with ros2_control</h3>
-          <!-- <p>
-            <span><img src="/assets/images/icons/git-black.svg"></span>
-            <a href="/" target="_blank">View issue</a>
-          </p> -->
-        </div>
-        <div class="release-versions__2">
-          March 2021
-        </div>
-        <div class="release-versions__3">
-          <strong>Andy Zelenak</strong><br/>
-          PickNik
-        </div>
-      </div>
-      <div class="release-versions__content">
-        <div class="release-versions__1">
-          <h3>Constrained Cartesian Planning</h3>
-          <p>
-            <span><img src="/assets/images/icons/git-black.svg"></span>
-            <a href="https://github.com/ros-planning/moveit2/issues/373" target="_blank">View issue</a>
-          </p>
-        </div>
-        <div class="release-versions__2">
-          March 2021
-        </div>
-        <div class="release-versions__3">
-          <strong>Boston Cleek</strong><br/>
-          PickNik
-        </div>
-      </div>
-      <div class="release-versions__content">
-        <div class="release-versions__1">
-          <h3>Use Bullet as default for continuous collision detection</h3>
-          <!-- <p>
-            <span><img src="/assets/images/icons/git-black.svg"></span>
-            <a href="/" target="_blank">View issue</a>
-          </p> -->
-        </div>
-        <div class="release-versions__2">
-          April 2021
-        </div>
-        <div class="release-versions__3">
-          <strong>Jorge Nicho</strong><br/>
-          Southwest Research Institute
-        </div>
-      </div>
-      <div class="release-versions__content">
-        <div class="release-versions__1">
-          <h3>Whole body planning for mobile manipulator</h3>
-          <!-- <p>
-            <span><img src="/assets/images/icons/git-black.svg"></span>
-            <a href="/" target="_blank">View issue</a>
-          </p> -->
-        </div>
-        <div class="release-versions__2">
-          May 2021
-        </div>
-        <div class="release-versions__3">
-          <strong>Mark Moll</strong><br/>
-          PickNik
-        </div>
+	</div>
       </div>
       <div class="release-versions__content">
         <div class="release-versions__1">
@@ -179,6 +120,36 @@ title: MoveIt Roadmap
           OMRON SINIC X
         </div>
       </div>
+      <div class="release-versions__content">
+        <div class="release-versions__1">
+          <h3>OMPL Orientation Constraints</h3>
+          <p>
+            <span><img src="/assets/images/icons/git-black.svg"></span>
+            <a href="https://github.com/ros-planning/moveit2/issues/348" target="_blank">View issue</a>
+          </p>
+        </div>
+        <div class="release-versions__2">
+          December 2021
+        </div>
+        <div class="release-versions__3">
+          <strong>TBD</strong><br/>
+        </div>
+      </div>
+      <div class="release-versions__content">
+        <div class="release-versions__1">
+          <h3>Add ability to attach and detach end-effector links</h3>
+          <p>
+            <span><img src="/assets/images/icons/git-black.svg"></span>
+            <a href="https://github.com/ros-planning/moveit2/issues/208" target="_blank">View issue</a>
+          </p>
+        </div>
+        <div class="release-versions__2">
+          December 2021
+        </div>
+        <div class="release-versions__3">
+          <strong>TBD</strong><br/>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -187,11 +158,11 @@ title: MoveIt Roadmap
     <img alt="Calendar plus" src="/assets/images/icons/calendar_plus.svg">
   </div>
   <div class='col-sm-12 col-lg-10'>
-    <h3>Long Term Roadmap</h3>
+    <h3>Long Term Goals</h3>
     <p class="paragraph-big">
       In order to align collaborative development and understand what MoveIt is and is not, we maintain a document of long term goals, target users, and future direction.
     </p>
-    <a class="button button-transparent button-transparent__blue" href="https://docs.google.com/document/d/1bRi5mNFrdXndY73jkoWxqi-vwcyJpkjCbYwrAc7qN3M/edit" target="_blank">VIEW LONG TERM ROADMAP</a>
+    <a class="button button-transparent button-transparent__blue" href="https://docs.google.com/document/d/1bRi5mNFrdXndY73jkoWxqi-vwcyJpkjCbYwrAc7qN3M/edit" target="_blank">VIEW LONG TERM GOALS</a>
   </div>
 </div>
 <div class='row roadmap-box'>

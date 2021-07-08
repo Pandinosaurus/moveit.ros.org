@@ -187,7 +187,7 @@ redirect_from: '/moveit/'
                         <div class="text-block text-block--left">
                             <span class="application-categories">Easy to use</span>
                             <h3>Setup Assistant</h3>
-                            <p>Quickly setup any robot to work with MoveIt with the step-by-step configuration wizard, or use popular pre-configured setups. Also includes configuration of Gazebo and ROS Control!</p>
+                            <p>Quickly setup any robot to work with MoveIt with the step-by-step configuration wizard, or use popular pre-configured setups. Also includes configuration of Gazebo and ROS Control.</p>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-6 col-lg-6 blue-circle blue-circle--left">
@@ -202,7 +202,7 @@ redirect_from: '/moveit/'
                         <div class="text-block text-block--right">
                             <span class="application-categories">Advanced</span>
                             <h3>Task Constructor</h3>
-                            <p>A flexible and transparent way to define and plan actions that consist of multiple interdependent subtasks!</p>
+                            <p>A flexible and transparent way to define and plan actions that consist of multiple interdependent subtasks.</p>
                         </div>
                     </div>
                 </div>
@@ -296,45 +296,11 @@ redirect_from: '/moveit/'
                 <!--         </div> -->
                 <!--     </div> -->
                 <!-- </div> -->
-                <div class='col-sm-12 time-line-wrappper time-line-wrapper-future'>
-                    <h3>MoveIt 2.2 Galactic Geochelone</h3>
-                    <a class="button button-transparent" href="/documentation/contributing/roadmap/">SEE ROADMAP</a>
-                    <div class="time-line">
-                        <div class="time-line--orange" id="time-line--orange-2"></div>
-                        <div class="time-line--blue" id="time-line--blue-2"></div>
-                        <div class="time-line--red" id="time-line--red-2"></div>
-                    </div>
-                    <div class="time-line-content">
-                        <div class="time-line--info">
-                            <p>September 2020</p>
-                        </div>
-                        <div class="time-line--info">
-                            <span class="time-line-box time-line-box--blue"></span>
-                            <p>
-                                <strong class="color-blue">Initial Development</strong>
-                                <small>14 September 2020</small>
-                            </p>
-                        </div>
-                        <div class="time-line--info">
-                            <span class="time-line-box time-line-box--orange"></span>
-                            <p>
-                                <strong class="color-orange">Feature Freeze</strong>
-                                <small>30 May 2021</small>
-                            </p>
-                        </div>
-                        <div class="time-line--info">
-                            <span class="time-line-box time-line-box--red"></span>
-                            <p>
-                                <strong class="color-red">Official Release</strong>
-                                <small>30 June 2021</small>
-                            </p>
-                        </div>
-                        <div class="time-line--info">
-                            <p>June 2021</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+            <!-- Release progress bar -->
+            {% include release-progress.html %}
+
+            <!-- Release versions table -->
             <div class='row'>
               <div class="release-versions">
                 <div class="release-versions__header">
@@ -343,6 +309,21 @@ redirect_from: '/moveit/'
                   <div class="release-versions__3">STATUS</div>
                 </div>
                 <div class="release-versions__body">
+                  <div class="release-versions__content">
+                    <div class="release-versions__1">
+                      <h3>Rolling 2.2</h3>
+                      <p>
+                        <span><img src="/assets/images/icons/git.svg"></span>
+                        <a href="https://github.com/ros-planning/moveit2" target="_blank">View branch</a>
+                      </p>
+                    </div>
+                    <div class="release-versions__2">
+                      ROS 2
+                    </div>
+                    <div class="release-versions__3">
+                      <span class="label label--blue">DEVELOPED</span>
+                    </div>
+                  </div>
                   <div class="release-versions__content">
                     <div class="release-versions__1">
                       <h3>Galactic 2.2</h3>
@@ -355,7 +336,22 @@ redirect_from: '/moveit/'
                       ROS 2
                     </div>
                     <div class="release-versions__3">
-                      <span class="label label--blue">In Development</span>
+                      <span class="label label--green text-dark">RECOMMENDED</span>
+                    </div>
+                  </div>
+                  <div class="release-versions__content">
+                    <div class="release-versions__1">
+                      <h3>Foxy 2.2 LTS</h3>
+                      <p>
+                        <span><img src="/assets/images/icons/git.svg"></span>
+                        <a href="https://github.com/ros-planning/moveit2" target="_blank">View branch</a>
+                      </p>
+                    </div>
+                    <div class="release-versions__2">
+                      ROS 2
+                    </div>
+                    <div class="release-versions__3">
+                      <span class="label label--orange text-dark">MAINTAINED</span>
                     </div>
                   </div>
                   <div class="release-versions__content">
@@ -370,27 +366,12 @@ redirect_from: '/moveit/'
                       ROS 1
                     </div>
                     <div class="release-versions__3">
-                      <span class="label label--orange">Maintained</span>
-                    </div>
-                  </div>
-                  <div class="release-versions__content">
-                    <div class="release-versions__1">
-                      <h3>Foxy 2.1 LTS</h3>
-                      <p>
-                        <span><img src="/assets/images/icons/git.svg"></span>
-                        <a href="https://github.com/ros-planning/moveit2" target="_blank">View branch</a>
-                      </p>
-                    </div>
-                    <div class="release-versions__2">
-                      ROS 2
-                    </div>
-                    <div class="release-versions__3">
-                      <span class="label label--green">Recommended</span>
+                      <span class="label label--orange text-dark">Maintained</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-        </div>
+      </div>
     </div>
 </div>

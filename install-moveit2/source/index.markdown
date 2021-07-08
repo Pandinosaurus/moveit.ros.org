@@ -13,7 +13,9 @@ Installing MoveIt 2 from source is the first step in contributing new features, 
 
 MoveIt is mainly supported on Linux, and the following build instructions support in particular:
 
-- Ubuntu 20.04 / ROS 2 Foxy Fitzroy
+- Ubuntu 20.04 / ROS 2 Foxy Fitzroy (LTS)
+- Ubuntu 20.04 / ROS 2 Galactic Geochelone (Recommended)
+- Ubuntu 20.04 / ROS 2 Rolling Ridley (Continuously Updated)
 
 In the future, we would like to expand our source build instructions to more OS's, please contribute instruction write-ups to [this repo](https://github.com/ros-planning/moveit.ros.org).
 
@@ -23,7 +25,7 @@ These instructions assume you are running on Ubuntu 20.04.
 
 ### Install <img src="/assets/install_page/ros_logo.jpeg"/>
 
-[Install ROS2 Foxy](https://index.ros.org/doc/ros2/Installation/Foxy/Linux-Install-Debians/) following the installation instructions.
+Install ROS2 [Foxy](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html), [Galactic](https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html) (recommended), or [Rolling](https://docs.ros.org/en/rolling/Installation/Ubuntu-Install-Debians.html) following the installation instructions.
 Use the desktop installation and don't forget to source the setup script.
 
 Make sure you have the latest versions of packages installed:
@@ -75,10 +77,9 @@ Create a colcon workspace:
 
 Download the repository and install any dependencies:
 
-    wget https://raw.githubusercontent.com/ros-planning/moveit2/main/moveit2.repos
-    vcs import < moveit2.repos
     git clone https://github.com/ros-planning/moveit2.git
-    rosdep install -r --from-paths . --ignore-src --rosdistro foxy -y
+    vcs import < moveit2/moveit2.repos
+    rosdep install -r --from-paths . --ignore-src --rosdistro $ROS_DISTRO -y
 
 ## Build MoveIt
 
@@ -95,10 +96,10 @@ Setup your environment - you can do this every time you work with this particula
 
 ### Quick Start
 
-We've prepared a simple demo setup that you can use for quickly spinning up a simulated robot environment with MoveItCpp.
+Check out the MoveIt 2 Tutorials on how to get started with simple demo packages.
 
-<a href="https://github.com/ros-planning/moveit2/tree/main/moveit_demo_nodes/run_moveit_cpp" target="_blank">
+<a href="http://moveit2_tutorials.picknik.ai/" target="_blank">
   <span class="link-with-background">
-    MoveItCpp Demo Package
+    MoveIt 2 Tutorials
   </span>
 </a>

@@ -13,7 +13,7 @@ categories:
 - MoveIt
 ---
 
-This post summarizes my contributions during the [Google Summer of Code 2019](https://summerofcode.withgoogle.com/archive/2019/projects/5398613398650880/). During three months, I worked on extending the collision detection capabilities of MoveIt through using [the Bullet library](https://pybullet.org/wordpress/).
+This post summarizes my contributions during the [Google Summer of Code 2019](https://summerofcode.withgoogle.com/archive/2019/projects/5398613398650880/). During three months, I worked on extending the collision detection capabilities of MoveIt through using [the Bullet library](https://pybullet.org/).
 
 Collision checking is a core component in robotic manipulation. It is executed thousands of times for path planning, as each configured state has to be collision free. Since the beginning of MoveIt, the [Flexible Collision Library (FCL)](https://github.com/flexible-collision-library/fcl) was used. However, FCL has limitations and therefore the discussion to integrate another collision checking library came up.
 

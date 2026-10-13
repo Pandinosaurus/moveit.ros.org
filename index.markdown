@@ -27,12 +27,6 @@ redirect_from: '/moveit/'
                 <div class="row justify-content-between homepage-main-wrapper">
                     <div class="col-xs-12 col-lg-6 col-sm-12">
                         <div class="main">
-                            <div class="main-tag">
-                                <a href="https://discourse.ros.org/t/move-of-nav2-and-moveit-repositories-at-github/37450" target="_blank">
-                                    <span class="blue">Announcing</span>
-                                    <span>A new website domain for the MoveIt project</span>
-                                </a>
-                            </div>
                             <h1>Moving robots into&nbsp;the&nbsp;future</h1>
                             <p class="main-text">
                               A motion planning, manipulation, and kinematics framework for ROS,

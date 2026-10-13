@@ -34,7 +34,7 @@ World MoveIt Day is an international hackathon to improve the MoveIt code base, 
   - October 26
   - Organizer: Nicholas Yeo
   - [Event details](https://www.eventbrite.sg/e/world-moveit-day-asia-pacific-2018-tickets-48267276724)
-- [Tokyo Opensource Robotics Kyokai Association (TORK)](http://opensource-robotics.tokyo.jp/) and [OMRON SINIC X Corporation](http://tinyurl.com/omronsinicx), Tokyo (Kashiwa), Japan
+- [Tokyo Opensource Robotics Kyokai Association (TORK)](http://opensource-robotics.tokyo.jp/) and [OMRON SINIC X Corporation](https://www.omron.com/sinicx/en/), Tokyo (Kashiwa), Japan
   - October 26
   - Organizer: Ryosuke Tajima
 - [Southwest Research Institute](https://www.swri.org/)/[ ROS-Industrial Consortium Americas](https://rosindustrial.org/ric-americas/), San Antonio, USA
@@ -108,6 +108,6 @@ We'd like to thank the following sponsors:
 
 [<img src="/assets/images/wmd18/tokyo_os_logo.png" alt="Tokyo Opensource Robotics Kyokai Association" width="200" css="margin-right:20px"/>](http://opensource-robotics.tokyo.jp/)
 
-[<img src="/assets/images/wmd18/omronsinicx_logo.jpeg" alt="OMRON SINIC X Corporation" width="200" css="margin-right:20px"/>](http://tinyurl.com/omronsinicx)
+[<img src="/assets/images/wmd18/omronsinicx_logo.jpeg" alt="OMRON SINIC X Corporation" width="200" css="margin-right:20px"/>](https://www.omron.com/sinicx/en/)
 
 [<img src="/assets/images/wmd18/swri_logo.jpg" alt="Southwest Research Institute" width="200" css="margin-right:20px"/>](https://www.swri.org/)

@@ -21,13 +21,13 @@ The MoveIt! development team would like to wish you a very happy new year and br
 ### A MoveIt! 2013 Montage Movie
 
 
-<iframe width="710" height="315" src="https://www.youtube-nocookie.com/embed/dblCGZzeUqs" frameborder="0" allowfullscreen></iframe>
+{% include video.html youtube="dblCGZzeUqs" %}
 
 
 ### A new website
 
 
-[(http://moveit.ros.org)](http://moveit.ros.org)
+[(moveit.ai)](/)
 
 We have listened to your feedback and added:
 
@@ -40,7 +40,7 @@ We have listened to your feedback and added:
   * [New documentation](/)
 
 
-  * [New tutorials](https://ros-planning.github.io/moveit_tutorials/) - Sphinx-based tutorials living next to the code so they are easier to maintain
+  * [New tutorials](https://moveit.github.io/moveit_tutorials/) - Sphinx-based tutorials living next to the code so they are easier to maintain
 
 
   * [Robots using MoveIt!](/robots/) page

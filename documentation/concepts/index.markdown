@@ -9,7 +9,7 @@ title: Concepts
 
 # Concepts
 
-The following is an overview of how MoveIt works. For more concrete documentation and details see the [tutorials](http://moveit2_tutorials.picknik.ai/) or the [developers' concepts](/documentation/concepts/developer_concepts/).
+The following is an overview of how MoveIt works. For more concrete documentation and details see the [tutorials](https://moveit.picknik.ai/) or the [developers' concepts](/documentation/concepts/developer_concepts/).
 
 ## System Architecture
 
@@ -30,7 +30,7 @@ The users can access the actions and services provided by _move_group_ in three 
 
 - **In Python** - using the [moveit_commander](http://docs.ros.org/noetic/api/moveit_commander/html/classmoveit__commander_1_1move__group_1_1MoveGroupCommander.html) package
 
-- **Through a GUI** - using the [Motion Planning plugin to Rviz](http://moveit2_tutorials.picknik.ai/doc/quickstart_in_rviz/quickstart_in_rviz_tutorial.html) (the ROS visualizer)
+- **Through a GUI** - using the [Motion Planning plugin to Rviz](https://moveit.picknik.ai/humble/doc/tutorials/quickstart_in_rviz/quickstart_in_rviz_tutorial.html) (the ROS visualizer)
 
 _move_group_ can be configured using the ROS param server from where it will also get the URDF and SRDF for the robot.
 
@@ -177,7 +177,7 @@ MoveIt uses a plugin infrastructure, especially targeted towards allowing users 
 
 ### **IKFast Plugin**
 
-Often, users may choose to implement their own kinematics solvers, e.g. the PR2 has its own kinematics solvers. A popular approach to implementing such a solver is using the [IKFast package](http://moveit2_tutorials.picknik.ai/doc/ikfast/ikfast_tutorial.html) to generate the C++ code needed to work with your particular robot.
+Often, users may choose to implement their own kinematics solvers, e.g. the PR2 has its own kinematics solvers. A popular approach to implementing such a solver is using the [IKFast package](https://moveit.github.io/moveit_tutorials/doc/ikfast/ikfast_tutorial.html) to generate the C++ code needed to work with your particular robot.
 
 ---
 
@@ -205,4 +205,4 @@ Collision checking is a very expensive operation often accounting for close to 9
 
 ### **Time parameterization**
 
-Motion planners will typically only generate "paths", i.e. there is no timing information associated with the paths. MoveIt includes a [trajectory processing routine](http://docs.ros.org/en/noetic/api/moveit_core/html/cpp/classtrajectory__processing_1_1IterativeParabolicTimeParameterization.html) that can work on these paths and generate trajectories that are properly time-parameterized accounting for the maximum velocity and acceleration limits imposed on individual joints. These limits are read from a special _joint_limits.yaml_ file that is specified for each robot.
+Motion planners will typically only generate "paths", i.e. there is no timing information associated with the paths. MoveIt includes a [trajectory processing routine](https://moveit.picknik.ai/humble/doc/concepts/trajectory_processing.html) that can work on these paths and generate trajectories that are properly time-parameterized accounting for the maximum velocity and acceleration limits imposed on individual joints. These limits are read from a special _joint_limits.yaml_ file that is specified for each robot.

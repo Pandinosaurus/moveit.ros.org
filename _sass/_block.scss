@@ -1,45 +1,52 @@
 .blog-single {
-  max-width: 300px;
-  margin: 0 auto 70px;
+  max-width: 350px;
+  margin-bottom: 70px;
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
+}
+
+.blog-main-row {
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.blog-row {
+  justify-content: space-between;
 }
 
 .blog-align-center {
   display: flex;
   align-items: center;
-  @media screen and (max-width: 575px) {
-    margin-bottom: 50px;
-  }
 }
 
 .blog-image-wrapper {
-  height: 160px;
+  height: 180px;
   width: 100%;
   position: relative;
   overflow: hidden;
   margin-bottom: 25px;
   border: 1px solid rgba(128, 128, 128, 0.1);
+
+  @media screen and (max-width: 768px) {
+    height: 320px;
+  }
+
   &.real-image {
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  img,
-  iframe {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    width: 80%;
+  iframe,
+  img {
+    width: 100%;
+    height: inherit;
   }
 
   &-main {
     height: 320px;
-    margin-bottom: 60px;
     img,
     iframe {
       @media screen and (max-width: 768px) {
@@ -139,13 +146,7 @@
 }
 
 .companies-using-moveit-logos {
-  opacity: 1;
   vertical-align: middle;
-  transition: filter 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -webkit-transition: opacity 0.25s ease-in-out;
-  filter: grayscale(100%);
   width: 180px;
   margin: 32px 40px 0;
 }
@@ -315,6 +316,89 @@
       font-size: 19px;
       font-weight: bold;
       margin-bottom: 24px;
+    }
+
+    // Style the embedded HubSpot newsletter form to match the site.
+    #newsletter-form {
+      max-width: 420px;
+      margin: 8px auto 0;
+      text-align: left;
+
+      // Loading / error line shown before the form renders (or on failure).
+      .hs-newsletter-status {
+        font-size: 15px;
+        font-weight: normal;
+        color: $text;
+        margin: 0;
+      }
+
+      // Hidden UTM fields still render a wrapper; collapse them so they
+      // don't leave empty gaps between the visible fields.
+      [class*="hs_utm"],
+      .hs_gclid {
+        display: none;
+      }
+
+      .hs-form-field {
+        margin-bottom: 14px;
+      }
+
+      // Field labels only — error labels live in .hs-error-msgs below.
+      .hs-form-field > label {
+        display: block;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 6px;
+        color: $dark-text;
+      }
+
+      .hs-input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 14px;
+        font: inherit;
+        font-size: 15px;
+        color: $dark-blue;
+        background: $white;
+        border: 1px solid rgba(25, 26, 32, 0.2);
+        border-radius: 4px;
+
+        &:focus {
+          outline: none;
+          border-color: $blue;
+        }
+      }
+
+      .hs-error-msgs {
+        list-style: none;
+        padding: 0;
+        margin: 6px 0 0;
+
+        label {
+          color: $red;
+          font-size: 13px;
+          font-weight: normal;
+        }
+      }
+
+      .hs-button {
+        margin-top: 4px;
+        padding: 10px 30px;
+        background-color: $blue;
+        color: $white;
+        border: 1px solid $blue;
+        border-radius: 4px;
+        letter-spacing: 1px;
+        font-size: 13px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $white;
+          color: $blue;
+        }
+      }
     }
   }
 }

@@ -15,28 +15,29 @@ title: FAQs
 
 _I'm totally new, how do I get started?_
 
-  * See the [tutorials](http://moveit2_tutorials.picknik.ai/) &#128540;
+  * See the [tutorials](https://moveit.picknik.ai/) &#128540;
 
 _What version of MoveIt should I use?_
 
-  * For most developers, we recommend building the [master](https://github.com/ros-planning/moveit) branch from source.
-  * If you are a beginner, installing the Noetic LTS release from Debian is the easiest and fastest.
+  * For most developers, we recommend MoveIt 2 on the latest LTS release, ROS 2 Lyrical. See the [supported distributions](/about/distribution/).
+  * If you are a beginner, [installing the Lyrical release from Debian](/install-moveit2/binary/) is the easiest and fastest.
+  * MoveIt 1 (ROS Noetic) is end-of-life and no longer receives updates.
   * You can also use a [Docker container](/install/docker/) for a virtual setup.
 
 _Should I build from source or install the Debians?_
 
   * If you are an intermediate to advanced user ready to contribute code, then install from source of course!
-  * If you are a beginner, the pre-built Debians for ROS Melodic and ROS Noetic are the easiest.
-  * Note however that the last ROS Distro was released almost 2 years ago, so the latest features are only on the *master* branch built from source.
+  * If you are a beginner, the pre-built Debians are the easiest.
+  * The latest features are only on the *main* branch built from source, or in the Rolling Debians.
 
 _What kind of computer do I need?_
 
-  * ROS 1.0 works best on a Linux computer, particularly Ubuntu 16.04 or 18.04. [Some Windows support](/install/) is also available.
+  * ROS 2 works best on a Linux computer, particularly Ubuntu 26.04 (Lyrical) or 24.04 (Jazzy). [Some Windows support](/install-moveit2/binary-windows/) is also available.
   * If you are running another operating system, we recommend to try dual booting, [installing on Docker](/install/docker/), or using a virtual machine (see [notes](/install/)).
 
 _Where is the source code?_
 
-  * See the cute Octocat at the top right corner of this webpage. Or just go to [MoveIt's Github](https://github.com/ros-planning/moveit).
+  * See the cute Octocat at the top right corner of this webpage. Or just go to [MoveIt's Github](https://github.com/moveit/moveit).
 
 _How do I create a pull request?_
 
@@ -89,7 +90,7 @@ _What is the difference between MoveIt and ROS-Industrial?_
 
 _I have a fix for a bug in the MoveIt tutorials. What should I do?_
 
-  * The MoveIt tutorials are hosted on [this Github repo](https://github.com/ros-planning/moveit_tutorials).
+  * The MoveIt tutorials are hosted on [this Github repo](https://github.com/moveit/moveit_tutorials).
   * To improve the tutorials, fork that package on Github, make the corrections, and create a pull request.
 
 _I have a found a bug in MoveIt itself. What should I do?_
@@ -100,7 +101,7 @@ _I have a found a bug in MoveIt itself. What should I do?_
 
 _I would like to add a new robot to the list of robots using MoveIt. What should I do?_
 
-  * Create a pull request to [moveit.ros.org's Github repo](https://github.com/ros-planning/moveit.ros.org) or email [PickNik Robotics](http://picknik.ai/connect) for additional assitance.
+  * Create a pull request to [moveit.ros.org's Github repo](https://github.com/moveit/moveit.ros.org) or email [PickNik Robotics](http://picknik.ai/connect) for additional assistance.
 
 _What robots does MoveIt support?_
 
@@ -111,9 +112,9 @@ _What robots does MoveIt support?_
 
 _How do I hear the latest announcements on MoveIt?_
 
-  * Watch the [MoveIt Category on ROS Discourse](https://discourse.ros.org/c/moveit)
+  * Watch the [MoveIt Category on ROS Discourse](https://discourse.openrobotics.org/tag/moveit)
   * Follow the [MoveIt blog](/blog).
-  * Follow <a href="https://twitter.com/PickNikRobotics" target="_blank" data-proofer-ignore>@PickNikRobotics</a> on Twitter.
+  * Follow <a href="https://twitter.com/PickNikRobotics" target="_blank">@PickNikRobotics</a> on Twitter.
 
 ## Legal
 

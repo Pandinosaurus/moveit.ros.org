@@ -12,7 +12,7 @@ categories:
 - ROS2
 ---
 
-<b>Big news!</b> <a href="https://github.com/ros-planning/moveit2" target="_blank">MoveIt 2 Beta</a> has been launched today thanks to a big effort from the PickNik Robotics' team, Yu Yan (Intel), Robert Haschke and other MoveIt maintainers. This is a big step forward in providing next generation open source robotics. MoveIt 2 will enable many compelling advantages over its predecessor, namely faster, more reactive planning through realtime control of robot arms. The new platform version will enable more reliable robot behaviors, based on industry feedback.
+<b>Big news!</b> <a href="https://github.com/moveit/moveit2" target="_blank">MoveIt 2 Beta</a> has been launched today thanks to a big effort from the PickNik Robotics' team, Yu Yan (Intel), Robert Haschke and other MoveIt maintainers. This is a big step forward in providing next generation open source robotics. MoveIt 2 will enable many compelling advantages over its predecessor, namely faster, more reactive planning through realtime control of robot arms. The new platform version will enable more reliable robot behaviors, based on industry feedback.
 
 ### Feature List
 
@@ -43,4 +43,4 @@ Unfortunately, there are still some packages that have not been ported yet due t
 
 **Demo and Beta Testing**
 
-We will provide a <a href="https://github.com/ros-planning/moveit2/tree/main/moveit_demo_nodes/run_moveit_cpp" target="_blank">MoveItCpp demo setup</a> with example code that runs a simulated Panda robot. We welcome you to play around with it and try to break it as much as possible. As a Beta tester, you are invited to reproduce the demo with other robot setups as well, while documenting and filing any issues you find. Ideally, you would provide PRs with corresponding fixes as well ;-).
+We will provide a <a href="https://moveit.picknik.ai/humble/doc/examples/moveit_cpp/moveitcpp_tutorial.html" target="_blank">MoveItCpp demo setup</a> with example code that runs a simulated Panda robot. We welcome you to play around with it and try to break it as much as possible. As a Beta tester, you are invited to reproduce the demo with other robot setups as well, while documenting and filing any issues you find. Ideally, you would provide PRs with corresponding fixes as well ;-).

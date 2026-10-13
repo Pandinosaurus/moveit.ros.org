@@ -61,7 +61,7 @@ Please state your intent to join or host the international event on [this form](
   - [Event details](https://www.eventbrite.com/e/world-moveit-day-2019-boulder-registration-74104704165?aff=ebdssbdestsearch)
 - USA, CA, Union City, [Vicarious](https://www.vicarious.com/)
   - Organizer: Peter So
-- USA, CA, San Jose, [Fetch Robotics](https://fetchrobotics.com/)
+- USA, CA, San Jose, Fetch Robotics
   - Organizer: Amel Ali
 - USA, ID, Pocatello, [Idaho State University](https://www.isu.edu)
   - Organizer: Omid Heidari
@@ -80,17 +80,17 @@ PickNik Robotics // world-moveit-day@picknik.ai
 
 We recommend building the master branch or the Melodic LTS release. The Kinetic branch development has ended but is still under Long Term Support.
 
-You can also use a [Docker container](https://moveit.ros.org/install/docker/) for easy setup.
+You can also use a [Docker container](/install/docker/) for easy setup.
 
 ### Finding Where You Can Help
 
-Suggested areas for improvement are tracked on the [MoveIt repository](https://github.com/ros-planning/moveit/issues). Find appropriate issues by looking for these labels:
+Suggested areas for improvement are tracked on the [MoveIt repository](https://github.com/moveit/moveit/issues). Find appropriate issues by looking for these labels:
 
-- [moveit day candidate](https://github.com/ros-planning/moveit/labels/moveit%20day%20candidate) labels issues as possible entry points for participants in the event.
+- [moveit day candidate](https://github.com/moveit/moveit/labels/moveit%20day%20candidate) labels issues as possible entry points for participants in the event.
   Make sure to check this before the event This list will grow longer before the event.
-- [simple improvements](https://github.com/ros-planning/moveit/issues?q=is%3Aopen+-label%3Aassigned+label%3A%22simple+improvements%22) indicates issues can
+- [simple improvements](https://github.com/moveit/moveit/issues?q=is%3Aopen+-label%3Aassigned+label%3A%22simple+improvements%22) indicates issues can
   probably be tackled in a few hours.
-- [documentation](https://github.com/ros-planning/moveit/issues?utf8=%E2%9C%93&q=is%3Aopen%20label%3Adocumentation%20-label%3Aassigned%20) suggests new tutorials,
+- [documentation](https://github.com/moveit/moveit/issues?utf8=%E2%9C%93&q=is%3Aopen%20label%3Adocumentation%20-label%3Aassigned%20) suggests new tutorials,
   changes to the website, etc.
 - no label - of course issues that are not marked can still be worked on during World MoveIt day, though they will likely take longer than one day to complete.
 
@@ -100,9 +100,9 @@ If you would like to help the MoveIt project by tackling an issue, make sure to 
 
 Feel free to ask further questions in each issue’s comments.
 
-Further needs for documentation and tutorials improvement can be found directly on the [moveit_tutorials issue tracker](https://github.com/ros-planning/moveit_tutorials/issues).
+Further needs for documentation and tutorials improvement can be found directly on the [moveit_tutorials issue tracker](https://github.com/moveit/moveit_tutorials/issues).
 
-Other larger code sprint ideas can be found on [this page](http://moveit.ros.org/documentation/contributing/future_projects/). While they will take longer than a day the
+Other larger code sprint ideas can be found on [this page](/documentation/contributing/future_projects/). While they will take longer than a day the
 ideas might provide a good reference for other things to contribute on WMD.
 
 ## Documentation
@@ -113,7 +113,7 @@ If you have studied an aspect of MoveIt extensively that is not currently docume
 started a conversation on the mailing list or other location where a more experienced developer explained a concept, consider converting that answer into a pull request
 to help others in the future with the same question.
 
-For more details on modifying documentation, see [Contributing](http://moveit.ros.org/documentation/contributing/).
+For more details on modifying documentation, see [Contributing](/documentation/contributing/).
 
 ## Video Conference and IRC
 

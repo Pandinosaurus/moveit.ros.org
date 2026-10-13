@@ -21,8 +21,8 @@ title: Get Involved
     <h3>Stay in touch</h3>
     <div class="get-involved-content">
       <img alt="Discourse" src="/assets/images/discourse.png">
-      <p>Follow MoveIt on <a href="http://discourse.ros.org/c/moveit" target="_blank">ROS Discourse</a> for project announcements, discussion of future development, maintenance, testing, and releases.</p>
-      <a class="button" href="http://discourse.ros.org/c/moveit" target="_blank">SUBSCRIBE</a>
+      <p>Follow MoveIt on <a href="http://discourse.ros.org/" target="_blank">ROS Discourse</a> for project announcements, discussion of future development, maintenance, testing, and releases.</p>
+      <a class="button" href="http://discourse.ros.org/" target="_blank">SUBSCRIBE</a>
     </div>
     <img alt="Discord" src="/assets/images/discord.jpg">
     <p>
@@ -62,7 +62,8 @@ title: Get Involved
 </div>
 <div class="row">
   <div class="get-involved-footer">
-    <p>You can also get the PickNik quarterly newsletter on MoveIt</p>
-    <a class="button button-transparent button-transparent__blue" href="https://picknik.us20.list-manage.com/subscribe?u=ec7904f1f579094c8e83e79e8&id=196b3fc03e" target="_blank">SUBSCRIBE TO OUR NEWSLETTER</a>
+    <p>You can also get the <a href="https://picknik.ai/">PickNik Robotics</a> quarterly newsletter on MoveIt</p>
+    <button type="button" id="newsletter-toggle" class="button button-transparent button-transparent__blue">SUBSCRIBE TO OUR NEWSLETTER</button>
+    <div id="newsletter-form" class="hs-newsletter-form" hidden></div>
   </div>
 </div>

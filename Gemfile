@@ -1,10 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.7.0'
-
-gem 'rake'
-gem 'github-pages', '192'
-gem 'html-proofer'
-gem 'jekyll-sass-converter'
-gem 'rubyzip', '>= 1.3.0'
-gem 'nokogiri', '>= 1.8.5'
+gem 'webrick', '~> 1.8'
+gem "github-pages", group: :jekyll_plugins
+gem 'html-proofer', '~> 3.19.4'
+gem 'rubyzip', '~> 2.3'

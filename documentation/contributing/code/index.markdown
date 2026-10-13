@@ -2,7 +2,7 @@
 author: davetcoleman
 comments: true
 date: 2016-8-1 02:13:26+00:00
-layout: pullrequests
+layout: contribution-guide
 slug: code
 title: Style Guidelines
 redirect_from: "/documentation/contributing/code.html"
@@ -18,7 +18,7 @@ In addition MoveIt has some extra style preferences:
 
 ## C++
 
- - We use C++14
+ - We use C++17
  - Use the C++ standard library (``std::``) whenever possible
  - Avoid C-style functions such as ``FLT_EPSILON`` - instead use ``std::numeric_limits<double>::epsilon()``
  - Boost is an encouraged library when functionality is not available in the standard library
@@ -60,7 +60,7 @@ In addition MoveIt has some extra style preferences:
 
 ## Shared Ptrs
 
- - For creating ``shared_ptr`` of any object, use MoveIt's standard [macro](https://github.com/ros-planning/moveit/blob/master/moveit_core/macros/include/moveit/macros/class_forward.h) ``MOVEIT_CLASS_FORWARD(ClassName)`` before the class declaration, and add the include ``#include <moveit/macros/class_forward.h>``. This will create two typedefs of shared pointers - ``<ClassName>Ptr`` and ``<ClassName>ConstPtr`` using either ``boost`` or ``std``.
+ - For creating ``shared_ptr`` of any object, use MoveIt's standard [macro](https://github.com/moveit/moveit/blob/master/moveit_core/macros/include/moveit/macros/class_forward.h) ``MOVEIT_CLASS_FORWARD(ClassName)`` before the class declaration, and add the include ``#include <moveit/macros/class_forward.h>``. This will create two typedefs of shared pointers - ``<ClassName>Ptr`` and ``<ClassName>ConstPtr`` using either ``boost`` or ``std``.
 
 ## CMakeLists.txt
 
@@ -89,15 +89,13 @@ To run pre-commit automatically before committing in a local repo, install git h
 
 ## clang-format Auto Code Formatting
 
-Note that if you use pre-commit as described above, clang-format is applied automatically before each commit (if `clang-format-10` is installed). This section describes how to use it manually.
+Note that if you use pre-commit as described above, clang-format is applied automatically before each commit (if `clang-format` is installed). This section describes how to use it manually.
 
 You can run **clang-format** in several ways. To install on Ubuntu simply run:
 
-    sudo apt install clang-format-10
+    sudo apt install clang-format
 
-Please note that we rely on clang-format version **10**. Sadly, newer versions are not fully backward compatible.
-
-clang-format requires a configuration file in the root of your catkin workspace. The MoveIt repo contains this file [here](https://github.com/ros-planning/moveit/blob/master/.clang-format).
+clang-format requires a configuration file in the root of your catkin workspace. The MoveIt repo contains this file [here](https://github.com/moveit/moveit/blob/master/.clang-format).
 
 ### Command Line
 
@@ -148,12 +146,6 @@ Navigate to ``Tools`` > ``Options`` > ``Beautifier``
 On the ``General`` tab, enable auto format on file save, using ``ClangFormat``.
 On the ``Clang Format`` tab, configure ``clang-format-10`` as your executable and choose ``Use predefined style`` from ``File``.
 
-### Atom Editor Configuration
-
-Install the [clang-format](https://atom.io/packages/clang-format) package via the Atom package manager or ``apm install clang-format``.
-
-In the package settings set ``clang-format-10`` as your executable and point 'Style' to your ``.clang-format`` file.
-
 ## clang-tidy Linting
 
 **clang-tidy** is a linting tool for C++. Where **clang-format** will fix the formatting of your code
@@ -163,7 +155,7 @@ more modern, more readable, and less prone to common bugs.
 You can install clang-tidy and other clang related tools with
 `sudo apt install clang-tidy clang-tools`
 
-Similarly to clang-format, clang-tidy uses the configuration file [``.clang-tidy``](https://github.com/ros-planning/moveit/blob/master/.clang-tidy) that is found first when traversing the source folder hierarchy upwards. The MoveIt repo provides this file [here](https://github.com/ros-planning/moveit/blob/master/.clang-tidy).
+Similarly to clang-format, clang-tidy uses the configuration file [``.clang-tidy``](https://github.com/moveit/moveit/blob/master/.clang-tidy) that is found first when traversing the source folder hierarchy upwards. The MoveIt repo provides this file [here](https://github.com/moveit/moveit/blob/master/.clang-tidy).
 
 
 Unlike clang-format, clang-tidy needs to know the exact compiler options used to build your project.

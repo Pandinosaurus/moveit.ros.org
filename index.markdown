@@ -19,7 +19,7 @@ redirect_from: '/moveit/'
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7KvF7Dj7bz0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <iframe width="560" height="315" data-src="https://www.youtube-nocookie.com/embed/7KvF7Dj7bz0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -27,15 +27,11 @@ redirect_from: '/moveit/'
                 <div class="row justify-content-between homepage-main-wrapper">
                     <div class="col-xs-12 col-lg-6 col-sm-12">
                         <div class="main">
-                            <div class="main-tag">
-                                <a href="ros/moveit/2021/04/04/WMD-2021-results.html">
-                                    <span class="blue">Announcement</span>
-                                    <span>World MoveIt Day Results Are In</span>
-                                </a>
-                            </div>
                             <h1>Moving robots into&nbsp;the&nbsp;future</h1>
-                            <p class="main-text">Incorporating the latest advances in motion planning,<br/>
-                            manipulation, 3D perception, kinematics, control and navigation</p>
+                            <p class="main-text">
+                              A motion planning, manipulation, and kinematics framework for ROS,
+                              ideal for students and university researchers.
+                            </p>
                             <div class="button-group">
                                 <button class="button button-yellow modal-btn" data-toggle="modal" data-target="#modalVideo">
                                 <span class="button-play">
@@ -44,7 +40,7 @@ redirect_from: '/moveit/'
                                 Watch overview
                                 </button>
                                 <a class="button button-yellow modal-link" href="https://www.youtube-nocookie.com/embed/7KvF7Dj7bz0" target="_blank">Watch overview</a>
-                                <a class="button button-transparent" href="http://moveit2_tutorials.picknik.ai/" target="_blank">Get Started</a>
+                                <a class="button button-transparent" href="https://moveit.picknik.ai/" target="_blank">Get Started</a>
                             </div>
                         </div>
                     </div>
@@ -53,16 +49,18 @@ redirect_from: '/moveit/'
                             <img class="robot-hand" src="/assets/images/main/hero.png" alt="Robot hand">
                             <div class="info-box-content">
                                 <div class="info-box-header">
-                                    Latest: MoveIt 2 Foxy / Ubuntu 20.04
+                                    Latest: <b>MoveIt Lyrical</b>
                                 </div>
-                                <a href="/install-moveit2/source/" class="info-box-button button">Build MoveIt 2 from Source</a>
+                                <a href="/install-moveit2/binary/" class="info-box-button button">Install MoveIt From Debian</a>
                                 <div class="info-box-version">
-                                    Version: 2.1.0
+                                    Ubuntu 26.04
                                 </div>
                                 <div class="link-group">
-                                    <a href="/install/" class="info-box-link">Install MoveIt 1.0</a>
+                                    <a href="/install-moveit2/source/" class="info-box-link">Build&nbsp;From&nbsp;Source</a>
                                     <span>|</span>
-                                    <a href="https://github.com/ros-planning/moveit2" target="_blank" class="info-box-link">View on Github</a>
+                                    <a href="https://github.com/moveit/moveit2" target="_blank" class="info-box-link">View&nbsp;on&nbsp;Github</a>
+                                    <span>|</span>
+                                    <a href="https://picknik.ai/moveit-2-vs-moveit-pro/" target="_blank" class="info-box-link">MoveIt&nbsp;Pro</a>
                                 </div>
                                 <img src="/assets/images/logo/ROS_logo.png" alt="ROS logo" class="info-box-logo" />
                             </div>
@@ -143,25 +141,9 @@ redirect_from: '/moveit/'
                         </div>
                     </div>
                 </div>
-                <div class="row align-items-center justify-content-center text-center mb-100">
-                    <div class="col-sm-12">
-                        <h2 class="h2 text-center companies-header">Companies using MoveIt</h2>
-                    </div>
-                    <div class="col-sm-12">
-                        <img class="companies-using-moveit-logos" src="/assets/images/Companies/nasa-logo.png" alt="Nasa logo">
-                        <img class="companies-using-moveit-logos" src="/assets/images/Companies/google-logo.png" alt="Google logo">
-                        <img class="companies-using-moveit-logos" src="/assets/images/Companies/ms-logo.png" alt="Microsoft logo">
-                        <img class="companies-using-moveit-logos" src="/assets/images/Companies/fetch-logo.png" alt="Fetch robotics logo">
-                        <img class="companies-using-moveit-logos" src="/assets/images/Companies/franka-logo.png" alt="Franka Emika logo">
-                        <img class="companies-using-moveit-logos" src="/assets/images/Companies/pal-logo.png" alt="Pal Robotics logo">
-                        <img class="companies-using-moveit-logos" src="/assets/images/Companies/rtr_Logo.png" alt="RTR logo">
-                        <img class="companies-using-moveit-logos" src="/assets/images/Companies/kinova-logo.png" alt="Kinova logo">
-                    </div>
-                </div>
                 <div class="row justify-content-between block-with-image">
                     <div class="col-xs-12 col-lg-6 col-md-6">
                         <div class="text-block text-block--left">
-                            <span class="application-categories">Powerful</span>
                             <h3>3D Interactive Visualizer</h3>
                             <p>Out-of-the box visual demonstrations in Rviz allow new users experimentation with various planning algorithms around obstacles. Execution on physical hardware is then just a click away.</p>
                         </div>
@@ -176,7 +158,6 @@ redirect_from: '/moveit/'
                     </div>
                     <div class="col-xs-12 col-lg-6 col-md-6">
                         <div class="text-block text-block--right">
-                            <span class="application-categories">Cutting edge</span>
                             <h3>Gazebo Simulation</h3>
                             <p>Speed up development and testing cycles by leveraging a full physics-based simulator with MoveIt. Combine Gazebo, ROS Control, and MoveIt for a powerful robotics development platform.</p>
                         </div>
@@ -185,9 +166,8 @@ redirect_from: '/moveit/'
                 <div class="row justify-content-between block-with-image">
                     <div class="col-xs-12 col-lg-6 col-md-6">
                         <div class="text-block text-block--left">
-                            <span class="application-categories">Easy to use</span>
                             <h3>Setup Assistant</h3>
-                            <p>Quickly setup any robot to work with MoveIt with the step-by-step configuration wizard, or use popular pre-configured setups. Also includes configuration of Gazebo and ROS Control!</p>
+                            <p>Quickly setup any robot to work with MoveIt with the step-by-step configuration wizard, or use popular pre-configured setups. Also includes configuration of Gazebo and ROS Control.</p>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-6 col-lg-6 blue-circle blue-circle--left">
@@ -200,16 +180,14 @@ redirect_from: '/moveit/'
                     </div>
                     <div class="col-xs-12 col-lg-6 col-md-6">
                         <div class="text-block text-block--right">
-                            <span class="application-categories">Advanced</span>
                             <h3>Task Constructor</h3>
-                            <p>A flexible and transparent way to define and plan actions that consist of multiple interdependent subtasks!</p>
+                            <p>A flexible and transparent way to define and plan actions that consist of multiple interdependent subtasks.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-between block-with-image">
                     <div class="col-xs-12 col-lg-6 col-md-6">
                         <div class="text-block text-block--left">
-                            <span class="application-categories">Intelligent</span>
                             <h3>Grasp Generation</h3>
                             <p>Libraries for geometric and machine learning-based grasp generation for use with the MoveIt pick and place pipeline.</p>
                         </div>
@@ -259,82 +237,9 @@ redirect_from: '/moveit/'
                 <div class='col-sm-12'>
                     <h2 class="h1 text-center"><a id="release-versions" href="#release-versions">Current and Future Versions</a></h2>
                 </div>
-                <!-- <div class='col-sm-12 time-line-wrappper'> -->
-                <!--     <h3>MoveIt 1.1 Noetic</h3> -->
-                <!--     <div class="time-line"> -->
-                <!--         <div class="time-line--orange" id="time-line--orange-1"></div> -->
-                <!--         <div class="time-line--blue" id="time-line--blue-1"></div> -->
-                <!--         <div class="time-line--red" id="time-line--red-1"></div> -->
-                <!--     </div> -->
-                <!--     <div class="time-line-content"> -->
-                <!--         <div class="time-line--info"> -->
-                <!--             <p>March 2019</p> -->
-                <!--         </div> -->
-                <!--         <div class="time-line--info"> -->
-                <!--             <span class="time-line-box time-line-box--blue"></span> -->
-                <!--             <p> -->
-                <!--                 Initial Development -->
-                <!--                 <small>1 March 2019</small> -->
-                <!--             </p> -->
-                <!--         </div> -->
-                <!--         <div class="time-line--info"> -->
-                <!--             <span class="time-line-box time-line-box--orange"></span> -->
-                <!--             <p> -->
-                <!--                 API Freeze -->
-                <!--                 <small>1 July 2020</small> -->
-                <!--             </p> -->
-                <!--         </div> -->
-                <!--         <div class="time-line--info"> -->
-                <!--             <span class="time-line-box time-line-box--red"></span> -->
-                <!--             <p> -->
-                <!--                 Official Release -->
-                <!--                 <small>15 July 2020</small> -->
-                <!--             </p> -->
-                <!--         </div> -->
-                <!--         <div class="time-line--info"> -->
-                <!--             <p>July 2020</p> -->
-                <!--         </div> -->
-                <!--     </div> -->
-                <!-- </div> -->
-                <div class='col-sm-12 time-line-wrappper time-line-wrapper-future'>
-                    <h3>MoveIt 2.2 Galactic Geochelone</h3>
-                    <a class="button button-transparent" href="/documentation/contributing/roadmap/">SEE ROADMAP</a>
-                    <div class="time-line">
-                        <div class="time-line--orange" id="time-line--orange-2"></div>
-                        <div class="time-line--blue" id="time-line--blue-2"></div>
-                        <div class="time-line--red" id="time-line--red-2"></div>
-                    </div>
-                    <div class="time-line-content">
-                        <div class="time-line--info">
-                            <p>September 2020</p>
-                        </div>
-                        <div class="time-line--info">
-                            <span class="time-line-box time-line-box--blue"></span>
-                            <p>
-                                <strong class="color-blue">Initial Development</strong>
-                                <small>14 September 2020</small>
-                            </p>
-                        </div>
-                        <div class="time-line--info">
-                            <span class="time-line-box time-line-box--orange"></span>
-                            <p>
-                                <strong class="color-orange">Feature Freeze</strong>
-                                <small>30 May 2021</small>
-                            </p>
-                        </div>
-                        <div class="time-line--info">
-                            <span class="time-line-box time-line-box--red"></span>
-                            <p>
-                                <strong class="color-red">Official Release</strong>
-                                <small>30 June 2021</small>
-                            </p>
-                        </div>
-                        <div class="time-line--info">
-                            <p>June 2021</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- Release progress bar -->
+            <!-- {% include release-progress.html %} -->
+            <!-- Release versions table -->
             <div class='row'>
               <div class="release-versions">
                 <div class="release-versions__header">
@@ -345,17 +250,77 @@ redirect_from: '/moveit/'
                 <div class="release-versions__body">
                   <div class="release-versions__content">
                     <div class="release-versions__1">
-                      <h3>Galactic 2.2</h3>
+                      <h3>Rolling 2.15</h3>
                       <p>
                         <span><img src="/assets/images/icons/git.svg"></span>
-                        <a href="https://github.com/ros-planning/moveit2" target="_blank">View branch</a>
+                        <a href="https://github.com/moveit/moveit2/tree/main" target="_blank">View branch</a>
                       </p>
                     </div>
                     <div class="release-versions__2">
                       ROS 2
                     </div>
                     <div class="release-versions__3">
-                      <span class="label label--blue">In Development</span>
+                      <span class="label label--blue">CONTINUALLY DEVELOPED</span>
+                    </div>
+                  </div>
+                  <div class="release-versions__content">
+                    <div class="release-versions__1">
+                      <h3>Lyrical 2.15 LTS</h3>
+                      <p>
+                        <span><img src="/assets/images/icons/git.svg"></span>
+                        <a href="https://github.com/moveit/moveit2/tree/main" target="_blank">View branch</a>
+                      </p>
+                    </div>
+                    <div class="release-versions__2">
+                      ROS 2
+                    </div>
+                    <div class="release-versions__3">
+                      <span class="label label--green">LATEST STABLE - RECOMMENDED</span>
+                    </div>
+                  </div>
+                  <div class="release-versions__content">
+                    <div class="release-versions__1">
+                      <h3>Kilted 2.14</h3>
+                      <p>
+                        <span><img src="/assets/images/icons/git.svg"></span>
+                        <a href="https://github.com/moveit/moveit2/tree/kilted" target="_blank">View branch</a>
+                      </p>
+                    </div>
+                    <div class="release-versions__2">
+                      ROS 2
+                    </div>
+                    <div class="release-versions__3">
+                      <span class="label label--orange text-dark">MAINTAINED</span>
+                    </div>
+                  </div>
+                  <div class="release-versions__content">
+                    <div class="release-versions__1">
+                      <h3>Jazzy 2.12 LTS</h3>
+                      <p>
+                        <span><img src="/assets/images/icons/git.svg"></span>
+                        <a href="https://github.com/moveit/moveit2/tree/jazzy" target="_blank">View branch</a>
+                      </p>
+                    </div>
+                    <div class="release-versions__2">
+                      ROS 2
+                    </div>
+                    <div class="release-versions__3">
+                      <span class="label label--orange text-dark">MAINTAINED</span>
+                    </div>
+                  </div>
+                  <div class="release-versions__content">
+                    <div class="release-versions__1">
+                      <h3>Humble 2.5 LTS</h3>
+                      <p>
+                        <span><img src="/assets/images/icons/git.svg"></span>
+                        <a href="https://github.com/moveit/moveit2/tree/humble" target="_blank">View branch</a>
+                      </p>
+                    </div>
+                    <div class="release-versions__2">
+                      ROS 2
+                    </div>
+                    <div class="release-versions__3">
+                      <span class="label label--orange text-dark">MAINTAINED</span>
                     </div>
                   </div>
                   <div class="release-versions__content">
@@ -363,34 +328,33 @@ redirect_from: '/moveit/'
                       <h3>Noetic 1.1 LTS</h3>
                       <p>
                         <span><img src="/assets/images/icons/git.svg"></span>
-                        <a href="https://github.com/ros-planning/moveit" target="_blank">View branch</a>
+                        <a href="https://github.com/moveit/moveit/tree/master" target="_blank">View branch</a>
                       </p>
                     </div>
                     <div class="release-versions__2">
                       ROS 1
                     </div>
                     <div class="release-versions__3">
-                      <span class="label label--orange">Maintained</span>
+                      <span class="label label--red">EOL - DISCONTINUED</span>
                     </div>
                   </div>
                   <div class="release-versions__content">
                     <div class="release-versions__1">
-                      <h3>Foxy 2.1 LTS</h3>
+                      <h3>MoveIt Pro</h3>
                       <p>
-                        <span><img src="/assets/images/icons/git.svg"></span>
-                        <a href="https://github.com/ros-planning/moveit2" target="_blank">View branch</a>
+                        <a href="https://picknik.ai/moveit-2-vs-moveit-pro/" target="_blank">View product page</a>
                       </p>
                     </div>
                     <div class="release-versions__2">
                       ROS 2
                     </div>
                     <div class="release-versions__3">
-                      <span class="label label--green">Recommended</span>
+                      <span class="label label--green">COMMERCIALLY SUPPORTED</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-        </div>
+      </div>
     </div>
 </div>

@@ -59,10 +59,10 @@ If you are a beginner, we recommend the stable Indigo branch/release. The PR2, M
 
 Suggested areas for improvement will be tracked on the new unified moveit repo via several labels that are ideal for World MoveIt Day:
 
-- [simple improvements](https://github.com/ros-planning/moveit/issues?q=is%3Aopen+-label%3Aassigned+label%3A%22simple+improvements%22) indicates the issue can probably be tackled in less than a few hours.
-- [documentation](https://github.com/ros-planning/moveit/issues?utf8=%E2%9C%93&q=is%3Aopen%20label%3Adocumentation%20-label%3Aassigned%20) suggestes new tutorials, changes to the website, etc.
-- [assigned](https://github.com/ros-planning/moveit/issues?q=is%3Aopen+is%3Aissue+label%3Aassigned) aids developers to find issues that are not already being worked on.
-- **no label** - even issues that are not marked as "simple" can be worked on for World MoveIt day, though they will likely take longer than one day to compelete
+- [simple improvements](https://github.com/moveit/moveit/issues?q=is%3Aopen+-label%3Aassigned+label%3A%22simple+improvements%22) indicates the issue can probably be tackled in less than a few hours.
+- [documentation](https://github.com/moveit/moveit/issues?utf8=%E2%9C%93&q=is%3Aopen%20label%3Adocumentation%20-label%3Aassigned%20) suggests new tutorials, changes to the website, etc.
+- [assigned](https://github.com/moveit/moveit/issues?q=is%3Aopen+is%3Aissue+label%3Aassigned) aids developers to find issues that are not already being worked on.
+- **no label** - even issues that are not marked as "simple" can be worked on for World MoveIt day, though they will likely take longer than one day to complete
 
 If you would like to help the MoveIt project by tackling an issue, claim the issue by commenting "I'll work on this" and a maintainer will then hopefully add the label "assigned". Feel free to ask further questions in each issue's comments.
 
@@ -72,19 +72,11 @@ If you have ideas and improvements for the project, please add your own issues t
 
 Improving our documentation is a major goal of WMD - please add to our Sphynx and Markdown-based documentation within our packages and on the MoveIt website. If you have studied extensively an aspect of MoveIt that is not currently documented, please convert your notes into a pull request in the appropriate location. If you've started a conversation on the mailing list or other location where a more experienced developer explained a concept, consider converting that answer into a pull request to help others in the future with the same question.
 
-For more details on modifying documentation, see [Contributing](http://moveit.ros.org/documentation/contributing/).
+For more details on modifying documentation, see [Contributing](/documentation/contributing/).
 
 ### Video Conference and IRC
 
-We're having issues with Google Hangouts so have switched to good old IRC and are in #moveit at irc.freenode.net.
-
-We will use Google Hangouts for the video conferencing software. Please join the following video call (limited to 10 particpants overnight Pacific time, but will increase to 25 participants during the day in Pacific time):
-
-[Google Hangouts Video Link](https://hangouts.google.com/hangouts/_/fetchrobotics.com/mferguson)
-
-Note: this link is subject to change throughout the day, check back
-
-Some people are also using https://appear.in/world-moveit-day
+NOTE: This event has passed, so the links are no longer active.
 
 ### MoveIt Integrated Manipulation Simulation
 
@@ -109,7 +101,7 @@ If you have any questions refer to the [Discourse Topic](http://discourse.ros.or
 
 We'd like to thank the following sponsors:
 
-- [Fetch Robotics](http://fetchrobotics.com/) for sponsoring the main event, stickers, and helping organize
+- Fetch Robotics for sponsoring the main event, stickers, and helping organize
 - [Travis CI](http://travis-ci.com) for providing increased continuous integration time on their build farm for this event
 
 <img src="/assets/images/sponsors/travis-ci.png" width="300" css="margin-right:20px"/>

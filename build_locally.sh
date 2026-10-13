@@ -1,9 +1,9 @@
 #!/bin/bash -eu
 # Locally build the Jekyl site for testing on Ubuntu 16.04
 
-have_travis() {
+have_check_arg() {
   for arg in "$@"; do
-    if [[ "${arg}" == "travis" ]]; then
+    if [[ "${arg}" == "check" ]]; then
       return 0
     fi
   done
@@ -39,14 +39,13 @@ export PATH=$HOME/gems/bin:$PATH
 # Install dependencies, unless argument says to skip
 if ! have_noinstall "$@"; then
   sudo apt-get install ruby ruby-dev build-essential
-  gem install jekyll
-  gem install bundler -v 1.17.3
+  gem install bundler -v 2.2.29
   bundle install
 fi
 
 # Test website using same script as Travis
-if have_travis "$@"; then
-  ./.travis.sh
+if have_check_arg "$@"; then
+  ./.check_build.sh
 fi
 
 # Launch website

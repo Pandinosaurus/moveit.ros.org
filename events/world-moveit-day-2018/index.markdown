@@ -34,7 +34,7 @@ World MoveIt Day is an international hackathon to improve the MoveIt code base, 
   - October 26
   - Organizer: Nicholas Yeo
   - [Event details](https://www.eventbrite.sg/e/world-moveit-day-asia-pacific-2018-tickets-48267276724)
-- [Tokyo Opensource Robotics Kyokai Association (TORK)](http://opensource-robotics.tokyo.jp/) and [OMRON SINIC X Corporation](http://tinyurl.com/omronsinicx), Tokyo (Kashiwa), Japan
+- [Tokyo Opensource Robotics Kyokai Association (TORK)](http://opensource-robotics.tokyo.jp/) and [OMRON SINIC X Corporation](https://www.omron.com/sinicx/en/), Tokyo (Kashiwa), Japan
   - October 26
   - Organizer: Ryosuke Tajima
 - [Southwest Research Institute](https://www.swri.org/)/[ ROS-Industrial Consortium Americas](https://rosindustrial.org/ric-americas/), San Antonio, USA
@@ -68,25 +68,25 @@ For your convenience, a VirtualBox image for ROS Kinetic on Ubuntu 16.04 is avai
 
 Suggested areas for improvement are tracked on MoveIt's GitHub repo via several labels:
 
-- [moveit day candidate](https://github.com/ros-planning/moveit/labels/moveit%20day%20candidate) labels issues as possible entry points for participants in the event. This list will grow longer before the event.
-- [simple improvements](https://github.com/ros-planning/moveit/issues?q=is%3Aopen+-label%3Aassigned+label%3A%22simple+improvements%22) indicates the issue can probably be tackled in a few hours, depending on your background.
-- [documentation](https://github.com/ros-planning/moveit/issues?utf8=%E2%9C%93&q=is%3Aopen%20label%3Adocumentation%20-label%3Aassigned%20) suggests new tutorials, changes to the website, etc.
-- [assigned](https://github.com/ros-planning/moveit/issues?q=is%3Aopen+is%3Aissue+label%3Aassigned) aids developers to find issues that are not already being worked on.
+- [moveit day candidate](https://github.com/moveit/moveit/labels/moveit%20day%20candidate) labels issues as possible entry points for participants in the event. This list will grow longer before the event.
+- [simple improvements](https://github.com/moveit/moveit/issues?q=is%3Aopen+-label%3Aassigned+label%3A%22simple+improvements%22) indicates the issue can probably be tackled in a few hours, depending on your background.
+- [documentation](https://github.com/moveit/moveit/issues?utf8=%E2%9C%93&q=is%3Aopen%20label%3Adocumentation%20-label%3Aassigned%20) suggests new tutorials, changes to the website, etc.
+- [assigned](https://github.com/moveit/moveit/issues?q=is%3Aopen+is%3Aissue+label%3Aassigned) aids developers to find issues that are not already being worked on.
 - **no label** - of course issues that are not marked can still be worked on during World MoveIt day, though they will likely take longer than one day to complete.
 
 If you would like to help the MoveIt project by tackling an issue, claim the issue by commenting "I'll work on this" and a maintainer will add the label "assigned". Feel free to ask further questions in each issue's comments. The developers will aim to reply to WMD-related questions before the event begins.
 
 If you have ideas and improvements for the project, please add your own issues to the tracker, using the appropriate labels where applicable. It's fine if you want to then claim them for yourself.
 
-Further needs for documentation and tutorials improvement can be found directly on the [moveit_tutorials issue tracker](https://github.com/ros-planning/moveit_tutorials/issues).
+Further needs for documentation and tutorials improvement can be found directly on the [moveit_tutorials issue tracker](https://github.com/moveit/moveit_tutorials/issues).
 
-Other larger code sprint ideas can be found [on this page](http://moveit.ros.org/documentation/contributing/future_projects/). While they will take longer than a day the ideas might provide a good reference for other things to contribute on WMD.
+Other larger code sprint ideas can be found [on this page](/documentation/contributing/future_projects/). While they will take longer than a day the ideas might provide a good reference for other things to contribute on WMD.
 
 ### Documentation
 
 Improving our documentation is at least as important as fixing bugs in the system. Please add to our Sphinx and Markdown-based documentation within our packages and on the MoveIt website. If you have studied extensively an aspect of MoveIt that is not currently documented well, please convert your notes into a pull request in the appropriate location. If you've started a conversation on the mailing list or other location where a more experienced developer explained a concept, consider converting that answer into a pull request to help others in the future with the same question.
 
-For more details on modifying documentation, see [Contributing](http://moveit.ros.org/documentation/contributing/).
+For more details on modifying documentation, see [Contributing](/documentation/contributing/).
 
 ### Video Conference and IRC
 
@@ -108,6 +108,6 @@ We'd like to thank the following sponsors:
 
 [<img src="/assets/images/wmd18/tokyo_os_logo.png" alt="Tokyo Opensource Robotics Kyokai Association" width="200" css="margin-right:20px"/>](http://opensource-robotics.tokyo.jp/)
 
-[<img src="/assets/images/wmd18/omronsinicx_logo.jpeg" alt="OMRON SINIC X Corporation" width="200" css="margin-right:20px"/>](http://tinyurl.com/omronsinicx)
+[<img src="/assets/images/wmd18/omronsinicx_logo.jpeg" alt="OMRON SINIC X Corporation" width="200" css="margin-right:20px"/>](https://www.omron.com/sinicx/en/)
 
 [<img src="/assets/images/wmd18/swri_logo.jpg" alt="Southwest Research Institute" width="200" css="margin-right:20px"/>](https://www.swri.org/)

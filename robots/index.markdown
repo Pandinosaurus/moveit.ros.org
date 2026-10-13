@@ -13,9 +13,20 @@ title: Robots
 			<div class="robots-main">
 				<h1>{{page.title}}</h1>
 				<p>MoveIt has been used on over 126 robots by the community. From deep sea to outerspace, from hobbiests to industrial applications, check out a few of the many examples below using MoveIt with different robots.</p>
-				<hr/>
+				<div class="robots-info">
+					<div class="robots-info-header">
+						<img src="/assets/icon/exclamation-circle.svg" alt="info" />
+						info
+					</div>
+					<div class="robots-info-content">
+						<p>
+							This page is not really maintained anymore, and we recommend you see the newer page on ROS 2 hardware that works with MoveIt
+						</p>
+						<a class="button" href="https://picknik.ai/hardware-ecosystem/" target="_blank">ROS 2 Compatible Robot Arms</a>
+					</div>
+				</div>
 				<p>See something missing? If you would like to add a robot to this list, please contact <a href="http://picknik.ai/">PickNik Robotics</a></p>
-				<p>We are also looking for robot maintainers and new robots. If you are willing to maintain the MoveIt packages for any robot in this list please post on the <a href="https://discourse.ros.org/c/moveit" target="_blank">ROS Discourse category</a>.</p>
+				<p>We are also looking for robot maintainers and new robots. If you are willing to maintain the MoveIt packages for any robot in this list please post on the <a href="https://discourse.openrobotics.org/tag/moveit" target="_blank">ROS Discourse category</a>.</p>
 			</div>
 		</div>
 	</div>
@@ -92,7 +103,6 @@ title: Robots
 				<div class="robots-content">
 					<h2>Robonaut 2</h2>
 					<h3>NASA Johnson Space Center</h3>
-					<a href="https://github.com/ros-planning/moveit_robots/tree/kinetic-devel/r2_moveit_generated" target="_blank">View package</a>
 				</div>
 			</div>
 		</div>
@@ -103,6 +113,17 @@ title: Robots
 				<div class="robots-content">
 					<h2>Valkyrie</h2>
 					<h3>NASA Johnson Space Center</h3>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-lg-3">
+			<div class="robots-single">
+				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/er-mycobot.jpeg');">
+				</div>
+				<div class="robots-content">
+					<h2>MyCobot</h2>
+					<h3>Elephant Robotics</h3>
+					<a href="https://github.com/elephantrobotics/mycobot_ros" target="_blank">View package</a>
 				</div>
 			</div>
 		</div>
@@ -124,7 +145,7 @@ title: Robots
 				<div class="robots-content">
 					<h2>PR2</h2>
 					<h3>Willow Garage</h3>
-					<a href="https://github.com/ros-planning/moveit_pr2/" target="_blank">View package</a>
+					<a href="https://github.com/moveit/moveit_pr2/" target="_blank">View package</a>
 				</div>
 			</div>
 		</div>
@@ -135,7 +156,6 @@ title: Robots
 				<div class="robots-content">
 					<h2>Atlas</h2>
 					<h3>Boston Dynamics</h3>
-					<a href="https://github.com/ros-planning/moveit_robots/tree/kinetic-devel/atlas_v3_moveit_config" target="_blank">View package</a>
 				</div>
 			</div>
 		</div>
@@ -146,7 +166,6 @@ title: Robots
 				<div class="robots-content">
 					<h2>Baxter Research Robot</h2>
 					<h3>Rethink Robotics</h3>
-					<a href="https://github.com/ros-planning/moveit_robots/tree/kinetic-devel/baxter" target="_blank">View package</a>
 				</div>
 			</div>
 		</div>
@@ -361,7 +380,7 @@ title: Robots
 		</div>
 		<div class="col-xs-12 col-sm-6 col-lg-3">
 			<div class="robots-single">
-				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/PAL_robotics/TIAGo.jpg');">
+				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/PAL_robotics/TIAGo.png');">
 				</div>
 				<div class="robots-content">
 					<h2>TIAGo</h2>
@@ -372,7 +391,18 @@ title: Robots
 		</div>
 		<div class="col-xs-12 col-sm-6 col-lg-3">
 			<div class="robots-single">
-				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/PAL_robotics/TALOS.jpg');">
+				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/PAL_robotics/TIAGo++.png');">
+				</div>
+				<div class="robots-content">
+					<h2>TIAGo++</h2>
+					<h3>PAL Robotics</h3>
+					<a href="https://github.com/pal-robotics/tiago_dual_moveit_config" target="_blank">View package</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-lg-3">
+			<div class="robots-single">
+				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/PAL_robotics/TALOS.png');">
 				</div>
 				<div class="robots-content">
 					<h2>TALOS</h2>
@@ -383,7 +413,7 @@ title: Robots
 		</div>
 		<div class="col-xs-12 col-sm-6 col-lg-3">
 			<div class="robots-single">
-				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/PAL_robotics/REEM-C.jpg');">
+				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/PAL_robotics/REEM-C.png');">
 				</div>
 				<div class="robots-content">
 					<h2>REEM-C</h2>
@@ -394,12 +424,22 @@ title: Robots
 		</div>
 		<div class="col-xs-12 col-sm-6 col-lg-3">
 			<div class="robots-single">
+				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/PAL_robotics/ARI.png');">
+				</div>
+				<div class="robots-content">
+					<h2>ARI</h2>
+					<h3>PAL Robotics</h3>
+					<a href="https://github.com/pal-robotics/ari_moveit_config" target="_blank">View package</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-lg-3">
+			<div class="robots-single">
 				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/hollie.png');">
 				</div>
 				<div class="robots-content">
 					<h2>HOLLIE</h2>
 					<h3>FZI Research Center for Information Technology</h3>
-					<a href="http://www.fzi.de/forschung/projekt-details/hollie" target="_blank">View package</a>
 				</div>
 			</div>
 		</div>
@@ -614,7 +654,7 @@ title: Robots
 				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/fanuc/m10ia.jpg');">
 				</div>
 				<div class="robots-content">
-					<h2>m10ia</h2>
+					<h2>M-10<i>i</i>A</h2>
 					<h3>Fanuc</h3>
 					<a href="https://github.com/ros-industrial/fanuc" target="_blank">View package</a>
 				</div>
@@ -622,10 +662,10 @@ title: Robots
 		</div>
 		<div class="col-xs-12 col-sm-6 col-lg-3">
 			<div class="robots-single">
-				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/fanuc/irmate200ib3l.png');">
+				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/fanuc/lrmate200ib3l.png');">
 				</div>
 				<div class="robots-content">
-					<h2>irmate200ib3l</h2>
+					<h2>LR Mate 200<i>i</i>B/3L</h2>
 					<h3>Fanuc</h3>
 					<a href="https://github.com/ros-industrial/fanuc" target="_blank">View package</a>
 				</div>
@@ -633,10 +673,10 @@ title: Robots
 		</div>
 		<div class="col-xs-12 col-sm-6 col-lg-3">
 			<div class="robots-single">
-				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/fanuc/irmate200ib.png');">
+				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/fanuc/lrmate200ib.png');">
 				</div>
 				<div class="robots-content">
-					<h2>irmate200ib</h2>
+					<h2>LR Mate 200<i>i</i>B</h2>
 					<h3>Fanuc</h3>
 					<a href="https://github.com/ros-industrial/fanuc" target="_blank">View package</a>
 				</div>
@@ -644,10 +684,10 @@ title: Robots
 		</div>
 		<div class="col-xs-12 col-sm-6 col-lg-3">
 			<div class="robots-single">
-				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/fanuc/irmate200ic5h.png');">
+				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/fanuc/lrmate200ic5h.png');">
 				</div>
 				<div class="robots-content">
-					<h2>irmate200ic5h</h2>
+					<h2>LR Mate 200<i>i</i>C/5H</h2>
 					<h3>Fanuc</h3>
 					<a href="https://github.com/ros-industrial/fanuc" target="_blank">View package</a>
 				</div>
@@ -655,10 +695,10 @@ title: Robots
 		</div>
 		<div class="col-xs-12 col-sm-6 col-lg-3">
 			<div class="robots-single">
-				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/fanuc/irmate200ic5l.png');">
+				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/fanuc/lrmate200ic5l.png');">
 				</div>
 				<div class="robots-content">
-					<h2>irmate200ic5l</h2>
+					<h2>LR Mate 200<i>i</i>C/5L</h2>
 					<h3>Fanuc</h3>
 					<a href="https://github.com/ros-industrial/fanuc" target="_blank">View package</a>
 				</div>
@@ -666,10 +706,10 @@ title: Robots
 		</div>
 		<div class="col-xs-12 col-sm-6 col-lg-3">
 			<div class="robots-single">
-				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/fanuc/irmate200ic.png');">
+				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/fanuc/lrmate200ic.png');">
 				</div>
 				<div class="robots-content">
-					<h2>irmate200ic</h2>
+					<h2>LR Mate 200<i>i</i>C</h2>
 					<h3>Fanuc</h3>
 					<a href="https://github.com/ros-industrial/fanuc" target="_blank">View package</a>
 				</div>
@@ -680,7 +720,7 @@ title: Robots
 				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/fanuc/m16ib20.png');">
 				</div>
 				<div class="robots-content">
-					<h2>m16ib20</h2>
+					<h2>M-16<i>i</i>B/20</h2>
 					<h3>Fanuc</h3>
 					<a href="https://github.com/ros-industrial/fanuc" target="_blank">View package</a>
 				</div>
@@ -691,7 +731,7 @@ title: Robots
 				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/fanuc/m16ib.png');">
 				</div>
 				<div class="robots-content">
-					<h2>m16ib</h2>
+					<h2>M-16<i>i</i>B</h2>
 					<h3>Fanuc</h3>
 					<a href="https://github.com/ros-industrial/fanuc" target="_blank">View package</a>
 				</div>
@@ -702,7 +742,7 @@ title: Robots
 				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/fanuc/m20ia_10l.png');">
 				</div>
 				<div class="robots-content">
-					<h2>m20ia/10l</h2>
+					<h2>M-20<i>i</i>A/10L</h2>
 					<h3>Fanuc</h3>
 					<a href="https://github.com/ros-industrial/fanuc" target="_blank">View package</a>
 				</div>
@@ -713,7 +753,7 @@ title: Robots
 				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/fanuc/m20ia.jpg');">
 				</div>
 				<div class="robots-content">
-					<h2>m20ia</h2>
+					<h2>M-20<i>i</i>A</h2>
 					<h3>Fanuc</h3>
 					<a href="https://github.com/ros-industrial/fanuc" target="_blank">View package</a>
 				</div>
@@ -724,7 +764,7 @@ title: Robots
 				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/fanuc/m20ib25.jpg');">
 				</div>
 				<div class="robots-content">
-					<h2>m20ib25</h2>
+					<h2>M-20<i>i</i>B/25</h2>
 					<h3>Fanuc</h3>
 					<a href="https://github.com/ros-industrial/fanuc" target="_blank">View package</a>
 				</div>
@@ -735,7 +775,7 @@ title: Robots
 				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/fanuc/m-430ia_2f.png');">
 				</div>
 				<div class="robots-content">
-					<h2>m-430ia/2f</h2>
+					<h2>M-430<i>i</i>A/2F</h2>
 					<h3>Fanuc</h3>
 					<a href="https://github.com/ros-industrial/fanuc" target="_blank">View package</a>
 				</div>
@@ -746,7 +786,7 @@ title: Robots
 				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/fanuc/m-430ia_2p.png');">
 				</div>
 				<div class="robots-content">
-					<h2>m-430ia/2p</h2>
+					<h2>M-430<i>i</i>A/2P</h2>
 					<h3>Fanuc</h3>
 					<a href="https://github.com/ros-industrial/fanuc" target="_blank">View package</a>
 				</div>
@@ -757,7 +797,7 @@ title: Robots
 				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/fanuc/m-430ia.png');">
 				</div>
 				<div class="robots-content">
-					<h2>m-430ia</h2>
+					<h2>M-430<i>i</i>A</h2>
 					<h3>Fanuc</h3>
 					<a href="https://github.com/ros-industrial/fanuc" target="_blank">View package</a>
 				</div>
@@ -768,7 +808,7 @@ title: Robots
 				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/fanuc/m-6ib.png');">
 				</div>
 				<div class="robots-content">
-					<h2>m-6ib</h2>
+					<h2>M-6<i>i</i>B</h2>
 					<h3>Fanuc</h3>
 					<a href="https://github.com/ros-industrial/fanuc" target="_blank">View package</a>
 				</div>
@@ -779,7 +819,7 @@ title: Robots
 				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/fanuc/cr7iA.png');">
 				</div>
 				<div class="robots-content">
-					<h2>cr7ia</h2>
+					<h2>CR-7<i>i</i>A</h2>
 					<h3>Fanuc</h3>
 					<a href="https://github.com/ros-industrial/fanuc" target="_blank">View package</a>
 				</div>
@@ -790,7 +830,7 @@ title: Robots
 				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/fanuc/cr7iAl.png');">
 				</div>
 				<div class="robots-content">
-					<h2>cr7ial</h2>
+					<h2>CR-7<i>i</i>A/L</h2>
 					<h3>Fanuc</h3>
 					<a href="https://github.com/ros-industrial/fanuc" target="_blank">View package</a>
 				</div>
@@ -1566,6 +1606,18 @@ title: Robots
 				<div class="robots-content">
 					<h2>iCub</h2>
 					<h3>IIT</h3>
+					<a href="https://github.com/icub-tech-iit/xcub-moveit2" target="_blank">View package</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-lg-3">
+			<div class="robots-single">
+				<div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/ergoCub.jpg');">
+				</div>
+				<div class="robots-content">
+					<h2>ergoCub</h2>
+					<h3>IIT</h3>
+					<a href="https://github.com/icub-tech-iit/xcub-moveit2" target="_blank">View package</a>
 				</div>
 			</div>
 		</div>
@@ -1619,17 +1671,6 @@ title: Robots
                                         <h2>xArm 7</h2>
                                         <h3>UFACTORY</h3>
                                         <a href="https://github.com/xArm-Developer/xarm_ros" target="_blank">View package</a>
-                                </div>
-                        </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-lg-3">
-                        <div class="robots-single">
-                                <div class="robots-image-wrapper" style="background-image: url('/assets/images/robots/MIP_Junior.png');">
-                                </div>
-                                <div class="robots-content">
-                                        <h2>Junior 300</h2>
-                                        <h3>MIP Robotics</h3>
-                                        <a href="https://github.com/MIPRobotics/ROS_robotics_simulation" target="_blank">View package</a>
                                 </div>
                         </div>
                 </div>

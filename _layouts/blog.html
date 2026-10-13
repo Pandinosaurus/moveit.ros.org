@@ -1,9 +1,10 @@
 {% include default.html %}
-
-<body>
-  {% include nav-bar.html %}
-  <div class="container container-blog">
-    {{ content }}
-  </div>
-</body>
-{% include footer.html %}
+  <body>
+    {% include announcement-banner.html %}
+    {% include nav-bar.html %}
+    <div class="container container-blog">
+      {{ content }}
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

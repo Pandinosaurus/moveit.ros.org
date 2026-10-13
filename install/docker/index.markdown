@@ -6,6 +6,10 @@ title: MoveIt 1 Docker Install
 
 <div>
     <h1><img src="/assets/install_page/docker.png">  MoveIt 1 Docker Install</h1>
+    <div class="alert alert-warning" role="alert">
+      <b>MoveIt 1 is end-of-life.</b> ROS Noetic, the last ROS 1 distribution, reached EOL in May 2025, and MoveIt 1 no longer receives updates.
+      For new projects, please use <a href="/install-moveit2/binary/">MoveIt 2</a>.
+    </div>
     <p>
       Docker is an open-source project that automates the deployment of Linux
       applications inside software containers.
@@ -24,7 +28,7 @@ title: MoveIt 1 Docker Install
     </p>
     <br/>
     <p>
-      Note that for recent Linux distros, the installation is basically just a single <span class="ros-command">wget</span> command. You may also want <a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/" target="_blank">add your user to the docker group</a> to avoid having to use sudo permissions when you use the docker command.
+      Note that for recent Linux distros, the installation is basically just a single <span class="ros-command">wget</span> command. You may also want to <a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/" target="_blank">add your user to the docker group</a> to avoid having to use sudo permissions when you use the docker command.
     </p>
     <h2>
       <img src="/assets/install_page/ubuntu_black.png"> Ubuntu
@@ -50,7 +54,7 @@ title: MoveIt 1 Docker Install
     <div class="bash-command">
       <code>
         curl -o gui-docker \<br/>
-        https://raw.githubusercontent.com/ros-planning/moveit/master/.docker/gui-docker && \<br/>
+        https://raw.githubusercontent.com/moveit/moveit/master/.docker/gui-docker && \<br/>
         chmod +x gui-docker
       </code>
     </div>
@@ -69,7 +73,7 @@ title: MoveIt 1 Docker Install
       </code>
     </div>
     <p>As the previous command dropped the <span class="ros-command">--rm</span> option, the container will be persistent, so changes you make inside the container will remain.</p>
-    <p>Running <span class="ros-command">gui-docker</span> in multiple terminals will connect them all to the same container. For convienence, the script defines sensible defaults. For example running the following command will try to pull the docker image containing the current master branch's source build namely, <a href="https://hub.docker.com/r/moveit/moveit/tags?page=1&ordering=last_updated" target="_blank"> moveit/moveit:master-source</a>, and if there already exists a container with this image, will directy connect to that container.</p>
+    <p>Running <span class="ros-command">gui-docker</span> in multiple terminals will connect them all to the same container. For convenience, the script defines sensible defaults. For example running the following command will try to pull the docker image containing the current master branch's source build namely, <a href="https://hub.docker.com/r/moveit/moveit/tags?page=1&ordering=last_updated" target="_blank"> moveit/moveit:master-source</a>, and if there already exists a container with this image, will directly connect to that container.</p>
     <div class="bash-command">
       <code>
         ./gui-docker
@@ -80,14 +84,14 @@ title: MoveIt 1 Docker Install
         <p>
           Start planning in Rviz with:
         </p>
-        <a href="https://ros-planning.github.io/moveit_tutorials/" target="_blank">
+        <a href="https://moveit.github.io/moveit_tutorials/" target="_blank">
           <span class="link-with-background">
             MoveIt Getting Started Tutorial
           </span>
         </a>
     <div class="horizontal-line"></div>
     <h2>MoveIt Container Types</h2>
-    <p>There are many variants of the MoveIt Docker available as <a href="/documentation/contributing/continuous_integration/">documented here</a>. For example, any of the two current distros work: [melodic, noetic]. Other variations include:</p>
+    <p>There are many variants of the MoveIt Docker available as <a href="/documentation/contributing/continuous_integration/">documented here</a>. For example, the ROS Noetic (EOL) variants. Other variations include:</p>
     <div class="container">
         <div class="install-card-wrapper">
             <div class="col-4 install-card-single">
@@ -95,8 +99,8 @@ title: MoveIt 1 Docker Install
                 <p>contains a full MoveIt workspace downloaded and built to ~/ws_moveit/src. This container is useful for developers wanting to test or develop in a sandbox.</p>
             </div>
             <div class="col-4 install-card-single">
-                <h3>moveit/moveit:melodic-release</h3>
-                <p>builds ontop of the CI image, the full debian-based install of MoveIt using apt.</p>
+                <h3>moveit/moveit:noetic-release</h3>
+                <p>builds on top of the CI image, the full debian-based install of MoveIt using apt.</p>
             </div>
             <div class="col-4 install-card-single">
                 <h3>moveit/moveit:master-ci</h3>

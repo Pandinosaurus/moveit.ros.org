@@ -1,6 +1,6 @@
 <div class="header">
   <div class="github github-blog">
-    <a href="https://github.com/ros-planning/moveit2" target="_blank" class="github-corner" aria-label="View source on Github">
+    <a href="https://github.com/moveit/moveit2" target="_blank" class="github-corner" aria-label="View source on Github">
       <svg width="71" height="71" viewBox="0 0 250 250" style="fill:#fff; color:#151513; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
         <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
@@ -10,9 +10,9 @@
   </div>
   <div class="container container-navigation">
 {% if include.homepage %}
-    <nav class="navbar navbar-expand-xl">
+    <nav class="navbar navbar-expand-lg">
 {% else %}
-    <nav class="navbar navbar-expand-xl navbar-blog">
+    <nav class="navbar navbar-expand-lg navbar-blog">
 {% endif %}
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="icon-bar"></span>
@@ -30,15 +30,16 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownInstall">
               <a class="dropdown-item" href="/install">MoveIt 1</a>
-              <a class="dropdown-item" href="/install-moveit2/source/">MoveIt 2</a>
+              <a class="dropdown-item" href="/install-moveit2/binary/">MoveIt 2</a>
+              <a class="dropdown-item" target="_blank" href="https://picknik.ai/moveit-2-vs-moveit-pro/">MoveIt Pro</a>
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://moveit2_tutorials.picknik.ai/" id="navbarDropdownDocs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="https://moveit.picknik.ai/" id="navbarDropdownDocs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Docs
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownDocs">
-              <a class="dropdown-item" target="_blank" href="http://moveit2_tutorials.picknik.ai/">Tutorials</a>
+              <a class="dropdown-item" target="_blank" href="https://moveit.picknik.ai/">Tutorials</a>
               <a class="dropdown-item" href="/documentation/applications/">Applications</a>
               <a class="dropdown-item" href="/documentation/concepts/">Concepts</a>
               <a class="dropdown-item" href="/documentation/related_projects/">Related Projects</a>
@@ -55,6 +56,7 @@
               <a class="dropdown-item" href="/about/">People</a>
               <a class="dropdown-item" href="/robots/">Robots</a>
               <a class="dropdown-item" href="/about/citations/">Citations</a>
+              <a class="dropdown-item" href="/about/distribution/">Distributions</a>
               <a class="dropdown-item" href="/documentation/faqs/">FAQ</a>
               <a class="dropdown-item" href="/support/">Get Support</a>
               <a class="dropdown-item" href="/about/press_kit/">Press Kit</a>
@@ -66,11 +68,11 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownContribute">
               <a class="dropdown-item" href="/documentation/contributing/">Contributing</a>
+              <a class="dropdown-item" href="/events/">Events</a>
               <a class="dropdown-item" href="/documentation/contributing/roadmap/">Roadmap</a>
-              <a class="dropdown-item" href="/moveit/ros/2019/09/19/moveit-workshop-macau.html">MoveIt Workshop</a>
-              <a class="dropdown-item" href="/events/world-moveit-day/2021/01/15/world-moveit-day-2021.html">World MoveIt Day</a>
+              <a class="dropdown-item" href="/events/2024-google-summer-of-code/">2024 Google Summer of Code</a>
               <a class="dropdown-item" href="/documentation/contributing/pullrequests/">Pull Requests</a>
-              <a class="dropdown-item" href="/documentation/contributing/code/">Code Style</a>
+              <a class="dropdown-item" href="/documentation/contributing/code/">Development</a>
             </div>
           </li>
           <li class="nav-item">

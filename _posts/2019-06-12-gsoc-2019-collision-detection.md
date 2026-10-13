@@ -26,14 +26,14 @@ Collision detection is a core necessity in path planning for any type of robot. 
 task. Inspired by the motion planning framework “[Tesseract](https://rosindustrial.org/news/2018/7/5/optimization-motion-planning-with-tesseract-and-trajopt-for-industrial-applications)”
 of ROS-Industrial, the aim of the project is to integrate Bullet as an additional collision checking library into MoveIt. This includes additional
 new features like continuous collision detection (CCD). CCD is useful as many state-of-the-art path planning frameworks like
-[Trajectory Optimization](http://rll.berkeley.edu/trajopt/doc/sphinx_build/html/) (TrajOpt) rely on it.
+[Trajectory Optimization](https://rll.berkeley.edu/trajopt/doc/sphinx_build/html/) (TrajOpt) rely on it.
 
 **Primary Goals**
 1. Integrate Bullet as a collision detection library
 2. Implement continuous collision detection using Bullet
 3. Tutorial on how to implement additional collision checking libraries into MoveIt
 
-To see the progress of this effort this summer, follow along [here](https://github.com/ros-planning/moveit/issues/1427).
+To see the progress of this effort this summer, follow along [here](https://github.com/moveit/moveit/issues/1427).
 
 [<img src="{{  site.url }}/assets/logo/moveit_logo-black.png" width="500" style="margin-right:20px"/>]({{ site.url }}/assets/logo/moveit_logo-black.png)
 
@@ -48,5 +48,5 @@ is at the same time powerful and fun. Jens is excited to contribute to such a po
 robotics experts. Besides coding this summer, he can be found  practicing Aikido or hiking in the beautiful Alps.
 
 **Useful Links**
-* [Main Github issue](https://github.com/ros-planning/moveit/issues/1427)
+* [Main Github issue](https://github.com/moveit/moveit/issues/1427)
 * [MoveIt fork](https://github.com/j-petit/moveit)
